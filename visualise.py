@@ -26,6 +26,7 @@ if 'h_enerlat' not in st.session_state:
 
 
 with st.sidebar:
+    st.subheader('Loading to apply at the free end of the beam')
     
     fx = st.slider('fx',-20000,20000,0,50)
     fy = st.slider('fy',-20000,20000,0,50) 
@@ -47,7 +48,8 @@ with st.sidebar:
     
     
     
-    
+    st.subheader('Back to origin in latent space')
+
     
     def raz():
         st.session_state['u_fcnn'] = fcnn.u0(1)
