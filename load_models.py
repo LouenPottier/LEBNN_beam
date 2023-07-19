@@ -19,7 +19,7 @@ fclat=FCLatNN(2, 128)
 fclat.load_state_dict(torch.load('fclat_0001L1'))
 
 enerlat=EnergyLatNN(2, 128, 32)
-enerlat.load_state_dict(torch.load('enerlat_0001_bias2'))
+enerlat.load_state_dict(torch.load('enerlat_0001'))
 
 enc_f=EncoderF()
 dec_f=DecoderF()
