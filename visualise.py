@@ -347,7 +347,7 @@ fig3.add_trace(
        colorscale='RdBu',
        line = dict(width = 0.1),
        contours=dict(
-           start=-1,
+           start=0,
            end=1,
            size=0.05,
        ),
