@@ -347,8 +347,8 @@ fig3.add_trace(
        colorscale='RdBu',
        line = dict(width = 0.1),
        contours=dict(
-           start=0,
-           end=1,
+           start=-0.5,
+           end=1.5,
            size=0.05,
        ),
        colorbar=dict(title='V(h) - h^t. B.f', len=0.6),
