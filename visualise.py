@@ -227,7 +227,7 @@ fig2.add_trace(
        contours=dict(
            start=0,
            end=20,
-           size=0.1,
+           size=0.5,
        ),
        colorbar=dict(title='||RN(h)-f||²', len=0.6),
 
