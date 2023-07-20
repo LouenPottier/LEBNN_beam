@@ -349,7 +349,7 @@ fig3.add_trace(
        contours=dict(
            start=-0.5,
            end=1.5,
-           size=0.05,
+           size=0.01,
        ),
        colorbar=dict(title='V(h) - h^t. B.f', len=0.6),
    ),
