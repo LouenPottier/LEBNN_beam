@@ -2,3 +2,5 @@ streamlit
 plotly==5.9.0
 torch
 streamlit_plotly_events
+quadprog
+scipy
