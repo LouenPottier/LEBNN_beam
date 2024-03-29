@@ -4,3 +4,4 @@ torch
 streamlit_plotly_events
 quadprog
 scipy
+tqdm
