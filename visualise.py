@@ -26,8 +26,27 @@ if 'h_enerlat' not in st.session_state:
 
 
 with st.sidebar:
+    st.title("20-DOF Beam Simulation")
+    
+    st.markdown("""
+    This application compares two neural network architectures for the **inverse problem (f ->u)** of a 2D cantilever beam:
+    
+    Given a force **f** applied at the free end, find the displacement field **u** that satisfies the equilibrium.
+    
+    Both neurals networks have been trained on the **direct provblem (u -> f)**, which is required because the inverse problem has a non-unique solution.
+
+    Only LEBNN is able to generalise make correct backward predictions (ie. solving the inverse problème) thanks to its energy structure and well structured latent space.
+
+    ---
+    """)
+    
     st.subheader('Loading to apply at the free end of the beam')
     
+    st.markdown("""
+    Use the sliders below to define the force components applied at the tip of the beam (in N).  
+    Then click **Apply load** to run the optimization.
+    """)
+        
     fx = st.slider('fx',-20000,20000,0,50)
     fy = st.slider('fy',-20000,20000,0,50) 
     #f=torch.tensor([[fx,fy]],dtype=torch.float32)/5000
@@ -359,6 +378,7 @@ fig3.add_trace(
 
 
 st.plotly_chart(fig3)
+
 
 
 
